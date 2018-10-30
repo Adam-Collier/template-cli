@@ -1,0 +1,26 @@
+{
+  "name": "mediahub-april",
+  "version": "1.0.0",
+  "description": "image formatting script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nom": "js-beautify output.html --html -o output.html -t",
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "cheerio": "^0.22.0",
+    "cloudinary": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0",
+    "html": "^1.0.0",
+    "js-beautify": "^1.6.12",
+    "masonry-css": "0.0.6"
+  },
+  "devDependencies": {
+    "gulp-sass": "^3.1.0"
+  }
+}
