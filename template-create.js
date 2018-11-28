@@ -18,9 +18,7 @@ let createTemplate = (workingDir, name) => {
           fs.writeFile(`${newDir}/index.html`, data, err => {
             if (err) console.log(err);
             console.log(
-              chalk.gray.bgGreen.bold(
-                "Your template has been created successfully"
-              )
+              chalk.green.bold("Your template has been created successfully \n")
             );
           });
         })
@@ -28,6 +26,7 @@ let createTemplate = (workingDir, name) => {
     })
     .catch(err => console.error(err));
 };
+
 module.exports = {
   createTemplate
 };
