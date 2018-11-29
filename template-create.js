@@ -6,7 +6,7 @@ const ora = require("ora");
 
 let path = require("path");
 
-const { spawn } = require("child_process");
+const { spawnSync } = require("child_process");
 
 let createTemplate = (workingDir, name) => {
   let newDir = `${workingDir}/${name}`;
@@ -34,7 +34,7 @@ let createTemplate = (workingDir, name) => {
             .then(() => {
               process.chdir(newDir);
               const spinner = ora("Installing depencies\n").start();
-              spawn("npm", ["install"]);
+              spawnSync("npm", ["install"]);
               spinner.succeed("Dependencies have been installed\n");
             })
             .catch(err => console.log(err));
